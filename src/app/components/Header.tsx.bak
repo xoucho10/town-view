@@ -1,0 +1,24 @@
+﻿import Link from "next/link"
+export default function Header(){
+return(
+<header className="sticky top-0 z-50 bg-[#F9F3E3]/95 backdrop-blur-xl border-b border-[#E8DCC0] px-4 md:px-10 py-3 flex justify-between items-center">
+<div className="flex gap-3 items-center">
+<div className="w-10 h-10 bg-white border border-[#E8DCC0] rounded-full shadow-sm grid place-items-center font-black text-[13px]">ITV</div>
+<div><h1 className="font-black text-[13px] md:text-[14px]">IGANGA TOWN VIEW SS</h1><p className="text-[7.5px] tracking-[0.25em] opacity-60 font-bold">EST. 1998 • S1–S6 UNEB • KIGULU BIKADHO</p></div>
+</div>
+<nav className="hidden xl:flex gap-5 text-[10.5px] font-semibold items-center">
+<Link href="/" className="font-black border-b-2 border-[#E8DCC0] pb-1">Home</Link>
+<Link href="/about" className="opacity-60 hover:opacity-100">About</Link>
+<Link href="/academics" className="opacity-60 hover:opacity-100">Academics</Link>
+<Link href="/news" className="opacity-60 hover:opacity-100">News</Link>
+<Link href="/students" className="opacity-60 hover:opacity-100">Students</Link>
+<Link href="/gallery" className="opacity-60 hover:opacity-100">Gallery</Link>
+<Link href="/clubs" className="opacity-60 hover:opacity-100">Clubs</Link>
+<Link href="/alumni" className="opacity-60 hover:opacity-100">Alumni</Link>
+<Link href="/contact" className="opacity-60 hover:opacity-100">Contact</Link>
+<Link href="/admissions" className="bg-white border border-[#E8DCC0] px-6 py-2.5 rounded-full font-black shadow-sm">Apply 2026 →</Link>
+</nav>
+<Link href="/admissions" className="xl:hidden bg-white border border-[#E8DCC0] px-4 py-2 rounded-full text-[11px] font-black shadow-sm">Apply →</Link>
+</header>
+)
+}
